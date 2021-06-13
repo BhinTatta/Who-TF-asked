@@ -1,7 +1,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	font-family: 'Sen', sans-serif;
+	font-family: 'Orbitron';
 	}
 body{
 	background-color: #09080b;
@@ -12,6 +12,73 @@ a {
   color: white;
   text-decoration: none;
 }
+/*Here is snap-scroll*/
+.snap-scroll{
+	scroll-snap-type: y mandatory;
+}
+.page{
+	scroll-snap-align: start;}
+
+/* SPINNER REEEEEE*/
+.spinner{
+	height:10vh;
+	width: 10vw;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	position:absolute;
+	left: 5vw;
+	top: 0;
+	background-color:#transparent;
+}
+.spinner-container{
+	display:flex;
+	position:relative;
+	width:10vw;
+	align-items:center;
+	justify-content:center;
+}
+.circle{
+	position:absolute;
+	border-radius:50%;	
+	animation:spin 3s linear infinite;
+	display:flex;
+}
+/*
+.circle-red{
+	border:20px solid rgba(252,33,33,.2);
+	border-right:20px solid rgb(252,33,33);
+	animation-delay:.5s;
+	width:150px;
+	height:150px;
+}
+*/
+.circle-green{
+	border:4px solid rgba(198,200,99,.2);
+	border-right:4px solid rgb(198,200,99);
+	animation-delay:1s;
+	width:35px;
+	height:35px;
+}
+
+.circle-blue{
+	border:6px solid rgba(18,198,255,.2);
+	border-right:6px solid rgb(18,198,255);
+	width:50px;
+	height:50px;
+}
+
+@keyframes spin{
+	100%{
+		transform:rotate3D(1,.5,.75,720deg)  rotateZ(720deg);
+	}
+}
+
+
+
+
+
+/* SPINNER REEEEEE*/
 
 /* Hamburger */
 .hamburger1 {
@@ -111,6 +178,7 @@ a {
 .slogan{
 	position: relative;
 	width: 100%;
+	height: 100vh;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
@@ -119,25 +187,32 @@ a {
 	}
 
 #s1{
+	font-family: "Orbitron" !important;
 	position: absolute;
 	font-size: 2.2em;
 	font-weight: 600;
-	top: 10vh;
+	top: 25vh;
 	left: 5vw;
 	}
 #s2{
 	position: absolute;
-	font-size: 3em;
+	font-size: 2.6em;
 	color: #fd2364;
 	font-weight: 800;
-	top: 25vh;
+	top: 35vh;
 	left: 5vw;
-	
+	font-family: 'Orbitron' !important;	
 	}
-	
-.text{
-	border: solid 1px #fd2364;
-	color: #fd2364;}
+#s3{
+	position: absolute;
+	font-size: 1em;
+	color: #fff;
+	font-weight: 200;
+	top: 75vh;
+	right: 5vw;
+	font-family: 'Orbitron' !important;
+	}
+
 	
 /* card futestic */
 h1{
@@ -146,6 +221,7 @@ h1{
   }
 
 .char{
+  font-family: "Orbitron" !important;
   color: #fff ;  /* this is color of main text transition */
   transition: color ease-out .3s;
   text-shadow: ease-out .3s;
@@ -153,8 +229,41 @@ h1{
   }
   
 .char.fade-in{
+  font-family: "Orbitron" !important;
   color: #0cf;   /* this is color of main text*/
   transition: color ease-out .3s;
   text-shadow: ease-out .3s;
   text-shadow: 0 0 1rem #0cf;
   }
+ 
+/* 2nd page of search */
+	
+.text-search{
+	position: relative;
+	border: solid 1px #fd2364;
+	color: #fd2364;
+	height: 100vh;}
+#t1{
+	position: absolute;
+	z-index: 1;
+	top: 3vh;
+	}
+#t2{
+	position: absolute;
+	font-weight: 800;
+	color: #0cf;
+	top: 5vh;
+	z-index: 2;
+	left: 2vw;
+	padding: 2vh 7vw;}
+#t3{
+	position: absolute;
+	font-weight: 800;
+	color: #0cf;
+	top: 20vh;
+	z-index: 2;
+	left: 2vw;
+	padding: 2vh 7vw;}
+
+/*Here is the form CSS*/
+/*Here is the form CSS*/
