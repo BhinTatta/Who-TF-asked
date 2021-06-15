@@ -249,7 +249,6 @@ h1{
 	
 .text-search{
 	position: relative;
-	border: solid 1px #fd2364;
 	color: #fd2364;
 	height: 100vh;}
 #t1{
@@ -278,6 +277,7 @@ h1{
 #t4{
 	display: block;
 	position: absolute;
+	background-color: #09080b;
 	z-index: 100;
 	bottom: 9vh;
 	left: 5vw;
