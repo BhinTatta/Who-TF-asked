@@ -159,7 +159,8 @@ submit.addEventListener('click', function adder(){
 	
 
 	
-});
+}, function(event){
+  event.preventDefault());
 //<p class="line-1 anim-typewriter">Initiating Global Search</p>
 function lod_adder(){ sorry.innerHTML += "<p>Initiating Global Search</p>";
 	sorry.classList.add("line-1 anim-typewriter");}
